@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cute Animals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cute Animals</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="info.html">Info</a>
+                <a href="pictures.html">Pictures</a>
+            </nav>
+        </header>
+
+        <div id="info1">
+            <h2>Here's some info about cute animals:</h2>
+
+            <p>Cute animals captivate our hearts with their irresistible charm and endearing antics. From kittens pouncing playfully to panda cubs clumsily exploring their surroundings, there's an innate charm to these creatures that brings joy to anyone who encounters them. The innocence reflected in the wide-eyed gaze of a baby bunny or the curiosity of a young fox melts away worries and creates a sense of connection with the natural world. Whether it's the chirping of colorful birds or the gentle nuzzle of a loyal dog, cute animals remind us to embrace the simple pleasures of life and cherish the beauty found in every furry, feathered, or scaly friend.</p>
+        </div>
+        
+        <div id="info2">
+            <h2>If you'd like to subscribe to see more cute animals, please fill this form:</h2>
+            
+            <form id="form">
+              <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <span id="nameError" class="error"></span>
+              </div>
+
+              <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <span id="emailError" class="error"></span>
+              </div>
+
+              <div>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" >
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <span id="genderError" class="error"></span>
+              </div>
+
+              <div>
+                <p>Favorite animal:</p>
+                <input type="checkbox" id="interest1" name="interests" value="kitties">
+                <label for="interest1">Kitties</label><br>
+                <input type="checkbox" id="interest2" name="interests" value="puppies">
+                <label for="interest2">Puppies</label><br>
+                <input type="checkbox" id="interest3" name="interests" value="bunnies">
+                <label for="interest3">Bunnies</label><br>
+                <input type="checkbox" id="interest4" name="interests" value="other">
+                <label for="interest3">Other</label><br>
+                <span id="interestsError" class="error"></span>                  
+              </div>
+
+              <div>
+                  <p>2-3 lines about your favorite animals:</p>
+                <textarea id="message" name="message" rows="4" cols="50" ></textarea><br>
+                <span id="messageError" class="error"></span>
+              </div>
+
+            <input id="submit" type="submit" value="Submit">
+            </form>
+            
+        </div>
+        
+
+        <div id="container">
+            <button id="infobutton">Click here for more info</button>
+        </div>
+        <script src="script.js"></script>
+        <script src="info.js"></script>
+    </body>
+</html>
